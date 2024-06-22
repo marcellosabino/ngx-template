@@ -1,13 +1,17 @@
 {
   "name": "ngx-template",
-  "version": "0.0.0",
+  "version": "18.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ngx-template": "node dist/ngx-template/server/server.mjs"
+    "serve:ssr:ngx-template": "node dist/ngx-template/server/server.mjs",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -33,12 +37,18 @@
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "autoprefixer": "^10.4.19",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "postcss": "^8.4.38",
+    "prettier": "3.3.2",
+    "tailwindcss": "^3.4.4",
+    "typescript": "~5.4.2",
     "jasmine-core": "~5.1.0",
-    "karma": "~6.4.0",
+    "karma": "^6.3.17",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.2"
+    "karma-jasmine-html-reporter": "~2.1.0"
   }
 }
