@@ -1,6 +1,6 @@
 # ngx-template
 
-Latest Version of Angular Template to get you started. Contains TailwindCSS, GHPages Deployment via Actions, Husky, ESLint, and Jest
+Latest Version of Angular Template to get you started. Contains TailwindCSS, GHPages Deployment via Actions, Husky, and Prettier.
 
 # Getting Started
 
